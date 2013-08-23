@@ -28,3 +28,6 @@ homebrew-formulae
 release-arch
 deb-build
 rcm-*
+
+# Test failure logs from cram
+*.t.err

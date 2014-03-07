@@ -1,0 +1,8 @@
+#!/bin/sh
+make >/dev/null || { printf "Failed to build\n" >&2; exit 1; }
+
+if [ $# -gt 0 ]; then
+  SRC=$PWD cram "$@"
+else
+  SRC=$PWD cram test
+fi
